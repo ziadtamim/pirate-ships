@@ -16,6 +16,14 @@
 		99740BE2234B346C00B3CEF3 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740BE0234B346C00B3CEF3 /* HTTPClient.swift */; };
 		99740BE3234B346C00B3CEF3 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740BE1234B346C00B3CEF3 /* EndPoint.swift */; };
 		99740BE6234B34A200B3CEF3 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740BE5234B34A200B3CEF3 /* BaseURL.swift */; };
+		99740BE9234B350700B3CEF3 /* ShipService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740BE8234B350700B3CEF3 /* ShipService.swift */; };
+		99740BEB234B352700B3CEF3 /* EndPoint+Queries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740BEA234B352700B3CEF3 /* EndPoint+Queries.swift */; };
+		99740BEF234B35A200B3CEF3 /* ShipViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740BEE234B35A200B3CEF3 /* ShipViewModel.swift */; };
+		99740BF2234B35E400B3CEF3 /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740BF1234B35E400B3CEF3 /* Ship.swift */; };
+		99740BF5234B360300B3CEF3 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740BF4234B360300B3CEF3 /* ViewModel.swift */; };
+		99740BF7234B361D00B3CEF3 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740BF6234B361D00B3CEF3 /* Content.swift */; };
+		99740BFA234B366800B3CEF3 /* Safe+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740BF9234B366800B3CEF3 /* Safe+Decodable.swift */; };
+		99740BFC234B368A00B3CEF3 /* UIImageView+Remote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740BFB234B368A00B3CEF3 /* UIImageView+Remote.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +50,14 @@
 		99740BE0234B346C00B3CEF3 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		99740BE1234B346C00B3CEF3 /* EndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		99740BE5234B34A200B3CEF3 /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
+		99740BE8234B350700B3CEF3 /* ShipService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipService.swift; sourceTree = "<group>"; };
+		99740BEA234B352700B3CEF3 /* EndPoint+Queries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EndPoint+Queries.swift"; sourceTree = "<group>"; };
+		99740BEE234B35A200B3CEF3 /* ShipViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipViewModel.swift; sourceTree = "<group>"; };
+		99740BF1234B35E400B3CEF3 /* Ship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
+		99740BF4234B360300B3CEF3 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		99740BF6234B361D00B3CEF3 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
+		99740BF9234B366800B3CEF3 /* Safe+Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Safe+Decodable.swift"; sourceTree = "<group>"; };
+		99740BFB234B368A00B3CEF3 /* UIImageView+Remote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Remote.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,9 +129,11 @@
 			children = (
 				99740BB8234B325D00B3CEF3 /* AppDelegate.swift */,
 				99740BDA234B339100B3CEF3 /* Coordinator.swift */,
+				99740BF0234B35D500B3CEF3 /* Models */,
 				99740BE4234B349100B3CEF3 /* Constants */,
-				99740BDF234B346B00B3CEF3 /* HTTP */,
+				99740BE7234B34F200B3CEF3 /* Services */,
 				99740BDC234B33A900B3CEF3 /* Modules */,
+				99740BF8234B364D00B3CEF3 /* Utils */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -123,7 +141,9 @@
 		99740BDC234B33A900B3CEF3 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				99740BDD234B33C800B3CEF3 /* ShipsViewController.swift */,
+				99740BF3234B35F800B3CEF3 /* Protocols */,
+				99740BED234B358B00B3CEF3 /* Controllers */,
+				99740BEC234B358300B3CEF3 /* ViewModels */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -143,6 +163,58 @@
 				99740BE5234B34A200B3CEF3 /* BaseURL.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		99740BE7234B34F200B3CEF3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				99740BE8234B350700B3CEF3 /* ShipService.swift */,
+				99740BEA234B352700B3CEF3 /* EndPoint+Queries.swift */,
+				99740BDF234B346B00B3CEF3 /* HTTP */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		99740BEC234B358300B3CEF3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				99740BEE234B35A200B3CEF3 /* ShipViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		99740BED234B358B00B3CEF3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				99740BDD234B33C800B3CEF3 /* ShipsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		99740BF0234B35D500B3CEF3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				99740BF1234B35E400B3CEF3 /* Ship.swift */,
+				99740BF6234B361D00B3CEF3 /* Content.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		99740BF3234B35F800B3CEF3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				99740BF4234B360300B3CEF3 /* ViewModel.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		99740BF8234B364D00B3CEF3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				99740BF9234B366800B3CEF3 /* Safe+Decodable.swift */,
+				99740BFB234B368A00B3CEF3 /* UIImageView+Remote.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,11 +318,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				99740BDB234B339100B3CEF3 /* Coordinator.swift in Sources */,
+				99740BE9234B350700B3CEF3 /* ShipService.swift in Sources */,
 				99740BDE234B33C800B3CEF3 /* ShipsViewController.swift in Sources */,
+				99740BF5234B360300B3CEF3 /* ViewModel.swift in Sources */,
+				99740BEB234B352700B3CEF3 /* EndPoint+Queries.swift in Sources */,
+				99740BEF234B35A200B3CEF3 /* ShipViewModel.swift in Sources */,
 				99740BE6234B34A200B3CEF3 /* BaseURL.swift in Sources */,
+				99740BFA234B366800B3CEF3 /* Safe+Decodable.swift in Sources */,
+				99740BFC234B368A00B3CEF3 /* UIImageView+Remote.swift in Sources */,
 				99740BE3234B346C00B3CEF3 /* EndPoint.swift in Sources */,
 				99740BE2234B346C00B3CEF3 /* HTTPClient.swift in Sources */,
 				99740BB9234B325D00B3CEF3 /* AppDelegate.swift in Sources */,
+				99740BF2234B35E400B3CEF3 /* Ship.swift in Sources */,
+				99740BF7234B361D00B3CEF3 /* Content.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
