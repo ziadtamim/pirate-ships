@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		99740BB9234B325D00B3CEF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740BB8234B325D00B3CEF3 /* AppDelegate.swift */; };
-		99740BBB234B325D00B3CEF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740BBA234B325D00B3CEF3 /* ViewController.swift */; };
-		99740BBE234B325D00B3CEF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99740BBC234B325D00B3CEF3 /* Main.storyboard */; };
 		99740BC0234B326000B3CEF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99740BBF234B326000B3CEF3 /* Assets.xcassets */; };
 		99740BC3234B326000B3CEF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99740BC1234B326000B3CEF3 /* LaunchScreen.storyboard */; };
 		99740BCE234B326000B3CEF3 /* PirateShipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740BCD234B326000B3CEF3 /* PirateShipsTests.swift */; };
+		99740BDB234B339100B3CEF3 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740BDA234B339100B3CEF3 /* Coordinator.swift */; };
+		99740BDE234B33C800B3CEF3 /* ShipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740BDD234B33C800B3CEF3 /* ShipsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +28,14 @@
 /* Begin PBXFileReference section */
 		99740BB5234B325D00B3CEF3 /* PirateShips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PirateShips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99740BB8234B325D00B3CEF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		99740BBA234B325D00B3CEF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		99740BBD234B325D00B3CEF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		99740BBF234B326000B3CEF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99740BC2234B326000B3CEF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99740BC4234B326000B3CEF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99740BC9234B326000B3CEF3 /* PirateShipsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PirateShipsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99740BCD234B326000B3CEF3 /* PirateShipsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PirateShipsTests.swift; sourceTree = "<group>"; };
 		99740BCF234B326000B3CEF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99740BDA234B339100B3CEF3 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		99740BDD234B33C800B3CEF3 /* ShipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +77,8 @@
 		99740BB7234B325D00B3CEF3 /* PirateShips */ = {
 			isa = PBXGroup;
 			children = (
-				99740BB8234B325D00B3CEF3 /* AppDelegate.swift */,
-				99740BBA234B325D00B3CEF3 /* ViewController.swift */,
-				99740BBC234B325D00B3CEF3 /* Main.storyboard */,
-				99740BBF234B326000B3CEF3 /* Assets.xcassets */,
-				99740BC1234B326000B3CEF3 /* LaunchScreen.storyboard */,
-				99740BC4234B326000B3CEF3 /* Info.plist */,
+				99740BD8234B32AA00B3CEF3 /* Resources */,
+				99740BD9234B335A00B3CEF3 /* Source */,
 			);
 			path = PirateShips;
 			sourceTree = "<group>";
@@ -94,6 +90,34 @@
 				99740BCF234B326000B3CEF3 /* Info.plist */,
 			);
 			path = PirateShipsTests;
+			sourceTree = "<group>";
+		};
+		99740BD8234B32AA00B3CEF3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				99740BC4234B326000B3CEF3 /* Info.plist */,
+				99740BBF234B326000B3CEF3 /* Assets.xcassets */,
+				99740BC1234B326000B3CEF3 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		99740BD9234B335A00B3CEF3 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				99740BB8234B325D00B3CEF3 /* AppDelegate.swift */,
+				99740BDA234B339100B3CEF3 /* Coordinator.swift */,
+				99740BDC234B33A900B3CEF3 /* Modules */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		99740BDC234B33A900B3CEF3 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				99740BDD234B33C800B3CEF3 /* ShipsViewController.swift */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,7 +203,6 @@
 			files = (
 				99740BC3234B326000B3CEF3 /* LaunchScreen.storyboard in Resources */,
 				99740BC0234B326000B3CEF3 /* Assets.xcassets in Resources */,
-				99740BBE234B325D00B3CEF3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +220,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99740BBB234B325D00B3CEF3 /* ViewController.swift in Sources */,
+				99740BDB234B339100B3CEF3 /* Coordinator.swift in Sources */,
+				99740BDE234B33C800B3CEF3 /* ShipsViewController.swift in Sources */,
 				99740BB9234B325D00B3CEF3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,14 +245,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		99740BBC234B325D00B3CEF3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				99740BBD234B325D00B3CEF3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		99740BC1234B326000B3CEF3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -361,7 +377,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PirateShips/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PirateShips/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -369,7 +385,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.byziad.PirateShips;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -378,7 +394,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PirateShips/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PirateShips/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -386,7 +402,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.byziad.PirateShips;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
