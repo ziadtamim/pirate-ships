@@ -10,7 +10,7 @@
 		99740BB9234B325D00B3CEF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740BB8234B325D00B3CEF3 /* AppDelegate.swift */; };
 		99740BC0234B326000B3CEF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99740BBF234B326000B3CEF3 /* Assets.xcassets */; };
 		99740BC3234B326000B3CEF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99740BC1234B326000B3CEF3 /* LaunchScreen.storyboard */; };
-		99740BCE234B326000B3CEF3 /* PirateShipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740BCD234B326000B3CEF3 /* PirateShipsTests.swift */; };
+		99740BCE234B326000B3CEF3 /* PirateShipServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740BCD234B326000B3CEF3 /* PirateShipServiceTests.swift */; };
 		99740BDB234B339100B3CEF3 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740BDA234B339100B3CEF3 /* Coordinator.swift */; };
 		99740BDE234B33C800B3CEF3 /* ShipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740BDD234B33C800B3CEF3 /* ShipsViewController.swift */; };
 		99740BE2234B346C00B3CEF3 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740BE0234B346C00B3CEF3 /* HTTPClient.swift */; };
@@ -30,6 +30,13 @@
 		99740C05234B38BD00B3CEF3 /* ShipViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740C04234B38BD00B3CEF3 /* ShipViewCell.swift */; };
 		99740C07234B39D600B3CEF3 /* ShipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740C06234B39D600B3CEF3 /* ShipViewController.swift */; };
 		99740C09234B4DE600B3CEF3 /* ShipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740C08234B4DE600B3CEF3 /* ShipView.swift */; };
+		99740C0C234B4F1F00B3CEF3 /* AlertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740C0B234B4F1F00B3CEF3 /* AlertTests.swift */; };
+		99740C10234B4FBA00B3CEF3 /* PartiallyFakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740C0F234B4FBA00B3CEF3 /* PartiallyFakeViewController.swift */; };
+		99740C12234B4FD900B3CEF3 /* FakeHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740C11234B4FD900B3CEF3 /* FakeHTTPClient.swift */; };
+		99740C14234B4FED00B3CEF3 /* Fixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740C13234B4FED00B3CEF3 /* Fixtures.swift */; };
+		99740C16234B500900B3CEF3 /* valid-response.json in Resources */ = {isa = PBXBuildFile; fileRef = 99740C15234B500900B3CEF3 /* valid-response.json */; };
+		99740C18234B501E00B3CEF3 /* valid-response-missing-greeting.json in Resources */ = {isa = PBXBuildFile; fileRef = 99740C17234B501E00B3CEF3 /* valid-response-missing-greeting.json */; };
+		99740C1A234B503C00B3CEF3 /* invalid-response.json in Resources */ = {isa = PBXBuildFile; fileRef = 99740C19234B503C00B3CEF3 /* invalid-response.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +56,7 @@
 		99740BC2234B326000B3CEF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99740BC4234B326000B3CEF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99740BC9234B326000B3CEF3 /* PirateShipsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PirateShipsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		99740BCD234B326000B3CEF3 /* PirateShipsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PirateShipsTests.swift; sourceTree = "<group>"; };
+		99740BCD234B326000B3CEF3 /* PirateShipServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PirateShipServiceTests.swift; sourceTree = "<group>"; };
 		99740BCF234B326000B3CEF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99740BDA234B339100B3CEF3 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		99740BDD234B33C800B3CEF3 /* ShipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipsViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +77,13 @@
 		99740C04234B38BD00B3CEF3 /* ShipViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipViewCell.swift; sourceTree = "<group>"; };
 		99740C06234B39D600B3CEF3 /* ShipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipViewController.swift; sourceTree = "<group>"; };
 		99740C08234B4DE600B3CEF3 /* ShipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipView.swift; sourceTree = "<group>"; };
+		99740C0B234B4F1F00B3CEF3 /* AlertTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTests.swift; sourceTree = "<group>"; };
+		99740C0F234B4FBA00B3CEF3 /* PartiallyFakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartiallyFakeViewController.swift; sourceTree = "<group>"; };
+		99740C11234B4FD900B3CEF3 /* FakeHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeHTTPClient.swift; sourceTree = "<group>"; };
+		99740C13234B4FED00B3CEF3 /* Fixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fixtures.swift; sourceTree = "<group>"; };
+		99740C15234B500900B3CEF3 /* valid-response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "valid-response.json"; sourceTree = "<group>"; };
+		99740C17234B501E00B3CEF3 /* valid-response-missing-greeting.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "valid-response-missing-greeting.json"; sourceTree = "<group>"; };
+		99740C19234B503C00B3CEF3 /* invalid-response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "invalid-response.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +134,10 @@
 		99740BCC234B326000B3CEF3 /* PirateShipsTests */ = {
 			isa = PBXGroup;
 			children = (
-				99740BCD234B326000B3CEF3 /* PirateShipsTests.swift */,
+				99740C0E234B4F9C00B3CEF3 /* Fixtures */,
+				99740C0D234B4F9500B3CEF3 /* Fakes */,
+				99740BCD234B326000B3CEF3 /* PirateShipServiceTests.swift */,
+				99740C0B234B4F1F00B3CEF3 /* AlertTests.swift */,
 				99740BCF234B326000B3CEF3 /* Info.plist */,
 			);
 			path = PirateShipsTests;
@@ -154,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				99740BF3234B35F800B3CEF3 /* Protocols */,
+				99740C0A234B4EA400B3CEF3 /* Views */,
 				99740BED234B358B00B3CEF3 /* Controllers + Views */,
 				99740BEC234B358300B3CEF3 /* ViewModels */,
 			);
@@ -199,9 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				99740BDD234B33C800B3CEF3 /* ShipsViewController.swift */,
-				99740C04234B38BD00B3CEF3 /* ShipViewCell.swift */,
 				99740C06234B39D600B3CEF3 /* ShipViewController.swift */,
-				99740C08234B4DE600B3CEF3 /* ShipView.swift */,
 			);
 			path = "Controllers + Views";
 			sourceTree = "<group>";
@@ -219,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				99740BF4234B360300B3CEF3 /* ViewModel.swift */,
+				99740C04234B38BD00B3CEF3 /* ShipViewCell.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -233,6 +250,34 @@
 				99740C00234B383C00B3CEF3 /* UICollectionView+Reusable.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		99740C0A234B4EA400B3CEF3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				99740C08234B4DE600B3CEF3 /* ShipView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		99740C0D234B4F9500B3CEF3 /* Fakes */ = {
+			isa = PBXGroup;
+			children = (
+				99740C0F234B4FBA00B3CEF3 /* PartiallyFakeViewController.swift */,
+				99740C11234B4FD900B3CEF3 /* FakeHTTPClient.swift */,
+			);
+			path = Fakes;
+			sourceTree = "<group>";
+		};
+		99740C0E234B4F9C00B3CEF3 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				99740C13234B4FED00B3CEF3 /* Fixtures.swift */,
+				99740C15234B500900B3CEF3 /* valid-response.json */,
+				99740C17234B501E00B3CEF3 /* valid-response-missing-greeting.json */,
+				99740C19234B503C00B3CEF3 /* invalid-response.json */,
+			);
+			path = Fixtures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,6 +370,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99740C1A234B503C00B3CEF3 /* invalid-response.json in Resources */,
+				99740C16234B500900B3CEF3 /* valid-response.json in Resources */,
+				99740C18234B501E00B3CEF3 /* valid-response-missing-greeting.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,7 +410,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99740BCE234B326000B3CEF3 /* PirateShipsTests.swift in Sources */,
+				99740C10234B4FBA00B3CEF3 /* PartiallyFakeViewController.swift in Sources */,
+				99740C12234B4FD900B3CEF3 /* FakeHTTPClient.swift in Sources */,
+				99740C0C234B4F1F00B3CEF3 /* AlertTests.swift in Sources */,
+				99740C14234B4FED00B3CEF3 /* Fixtures.swift in Sources */,
+				99740BCE234B326000B3CEF3 /* PirateShipServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
