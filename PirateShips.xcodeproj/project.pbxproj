@@ -13,6 +13,9 @@
 		99740BCE234B326000B3CEF3 /* PirateShipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740BCD234B326000B3CEF3 /* PirateShipsTests.swift */; };
 		99740BDB234B339100B3CEF3 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740BDA234B339100B3CEF3 /* Coordinator.swift */; };
 		99740BDE234B33C800B3CEF3 /* ShipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740BDD234B33C800B3CEF3 /* ShipsViewController.swift */; };
+		99740BE2234B346C00B3CEF3 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740BE0234B346C00B3CEF3 /* HTTPClient.swift */; };
+		99740BE3234B346C00B3CEF3 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740BE1234B346C00B3CEF3 /* EndPoint.swift */; };
+		99740BE6234B34A200B3CEF3 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740BE5234B34A200B3CEF3 /* BaseURL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		99740BCF234B326000B3CEF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99740BDA234B339100B3CEF3 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		99740BDD234B33C800B3CEF3 /* ShipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipsViewController.swift; sourceTree = "<group>"; };
+		99740BE0234B346C00B3CEF3 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		99740BE1234B346C00B3CEF3 /* EndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		99740BE5234B34A200B3CEF3 /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,8 @@
 			children = (
 				99740BB8234B325D00B3CEF3 /* AppDelegate.swift */,
 				99740BDA234B339100B3CEF3 /* Coordinator.swift */,
+				99740BE4234B349100B3CEF3 /* Constants */,
+				99740BDF234B346B00B3CEF3 /* HTTP */,
 				99740BDC234B33A900B3CEF3 /* Modules */,
 			);
 			path = Source;
@@ -118,6 +126,23 @@
 				99740BDD234B33C800B3CEF3 /* ShipsViewController.swift */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		99740BDF234B346B00B3CEF3 /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				99740BE0234B346C00B3CEF3 /* HTTPClient.swift */,
+				99740BE1234B346C00B3CEF3 /* EndPoint.swift */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		99740BE4234B349100B3CEF3 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				99740BE5234B34A200B3CEF3 /* BaseURL.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +247,9 @@
 			files = (
 				99740BDB234B339100B3CEF3 /* Coordinator.swift in Sources */,
 				99740BDE234B33C800B3CEF3 /* ShipsViewController.swift in Sources */,
+				99740BE6234B34A200B3CEF3 /* BaseURL.swift in Sources */,
+				99740BE3234B346C00B3CEF3 /* EndPoint.swift in Sources */,
+				99740BE2234B346C00B3CEF3 /* HTTPClient.swift in Sources */,
 				99740BB9234B325D00B3CEF3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
