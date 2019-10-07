@@ -24,6 +24,10 @@
 		99740BF7234B361D00B3CEF3 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740BF6234B361D00B3CEF3 /* Content.swift */; };
 		99740BFA234B366800B3CEF3 /* Safe+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740BF9234B366800B3CEF3 /* Safe+Decodable.swift */; };
 		99740BFC234B368A00B3CEF3 /* UIImageView+Remote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740BFB234B368A00B3CEF3 /* UIImageView+Remote.swift */; };
+		99740BFF234B381800B3CEF3 /* UIKit+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740BFE234B381800B3CEF3 /* UIKit+Helpers.swift */; };
+		99740C01234B383C00B3CEF3 /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740C00234B383C00B3CEF3 /* UICollectionView+Reusable.swift */; };
+		99740C03234B384E00B3CEF3 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740C02234B384E00B3CEF3 /* Alert.swift */; };
+		99740C05234B38BD00B3CEF3 /* ShipViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99740C04234B38BD00B3CEF3 /* ShipViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,10 @@
 		99740BF6234B361D00B3CEF3 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 		99740BF9234B366800B3CEF3 /* Safe+Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Safe+Decodable.swift"; sourceTree = "<group>"; };
 		99740BFB234B368A00B3CEF3 /* UIImageView+Remote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Remote.swift"; sourceTree = "<group>"; };
+		99740BFE234B381800B3CEF3 /* UIKit+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Helpers.swift"; sourceTree = "<group>"; };
+		99740C00234B383C00B3CEF3 /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
+		99740C02234B384E00B3CEF3 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		99740C04234B38BD00B3CEF3 /* ShipViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,7 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				99740BF3234B35F800B3CEF3 /* Protocols */,
-				99740BED234B358B00B3CEF3 /* Controllers */,
+				99740BED234B358B00B3CEF3 /* Controllers + Views */,
 				99740BEC234B358300B3CEF3 /* ViewModels */,
 			);
 			path = Modules;
@@ -183,12 +191,13 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		99740BED234B358B00B3CEF3 /* Controllers */ = {
+		99740BED234B358B00B3CEF3 /* Controllers + Views */ = {
 			isa = PBXGroup;
 			children = (
 				99740BDD234B33C800B3CEF3 /* ShipsViewController.swift */,
+				99740C04234B38BD00B3CEF3 /* ShipViewCell.swift */,
 			);
-			path = Controllers;
+			path = "Controllers + Views";
 			sourceTree = "<group>";
 		};
 		99740BF0234B35D500B3CEF3 /* Models */ = {
@@ -211,8 +220,11 @@
 		99740BF8234B364D00B3CEF3 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				99740C02234B384E00B3CEF3 /* Alert.swift */,
 				99740BF9234B366800B3CEF3 /* Safe+Decodable.swift */,
 				99740BFB234B368A00B3CEF3 /* UIImageView+Remote.swift */,
+				99740BFE234B381800B3CEF3 /* UIKit+Helpers.swift */,
+				99740C00234B383C00B3CEF3 /* UICollectionView+Reusable.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -320,7 +332,10 @@
 				99740BDB234B339100B3CEF3 /* Coordinator.swift in Sources */,
 				99740BE9234B350700B3CEF3 /* ShipService.swift in Sources */,
 				99740BDE234B33C800B3CEF3 /* ShipsViewController.swift in Sources */,
+				99740C03234B384E00B3CEF3 /* Alert.swift in Sources */,
 				99740BF5234B360300B3CEF3 /* ViewModel.swift in Sources */,
+				99740BFF234B381800B3CEF3 /* UIKit+Helpers.swift in Sources */,
+				99740C05234B38BD00B3CEF3 /* ShipViewCell.swift in Sources */,
 				99740BEB234B352700B3CEF3 /* EndPoint+Queries.swift in Sources */,
 				99740BEF234B35A200B3CEF3 /* ShipViewModel.swift in Sources */,
 				99740BE6234B34A200B3CEF3 /* BaseURL.swift in Sources */,
@@ -329,6 +344,7 @@
 				99740BE3234B346C00B3CEF3 /* EndPoint.swift in Sources */,
 				99740BE2234B346C00B3CEF3 /* HTTPClient.swift in Sources */,
 				99740BB9234B325D00B3CEF3 /* AppDelegate.swift in Sources */,
+				99740C01234B383C00B3CEF3 /* UICollectionView+Reusable.swift in Sources */,
 				99740BF2234B35E400B3CEF3 /* Ship.swift in Sources */,
 				99740BF7234B361D00B3CEF3 /* Content.swift in Sources */,
 			);
