@@ -8,11 +8,18 @@
 
 import UIKit
 
+protocol ShipsControllerDelegate: class {
+    func didSelect(viewModel: ShipViewModel)
+}
+
 final class ShipsViewController: UICollectionViewController {
+    weak var delegate: ShipsControllerDelegate?
+
     fileprivate var viewModels = [ShipViewModel]()
 
-    init() {
+    init(delegate: ShipsControllerDelegate?) {
         super.init(collectionViewLayout: UICollectionViewFlowLayout())
+        self.delegate = delegate
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -67,7 +74,7 @@ extension ShipsViewController {
 
 extension ShipsViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-
+        delegate?.didSelect(viewModel: viewModels[indexPath.row])
     }
 }
 
@@ -77,3 +84,4 @@ extension ShipsViewController: UICollectionViewDelegateFlowLayout {
         return CGSize(width: width, height: 80)
     }
 }
+

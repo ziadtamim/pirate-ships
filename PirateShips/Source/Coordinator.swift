@@ -23,8 +23,17 @@ final class Coordinator {
     }
 
     func instantiateInitialViewController() {
-        let viewController = ShipsViewController()
+        let viewController = ShipsViewController(delegate: self)
 
         rootViewController?.pushViewController(viewController, animated: false)
     }
 }
+
+extension Coordinator: ShipsControllerDelegate {
+    func didSelect(viewModel: ShipViewModel) {
+        let viewController = ShipViewController(viewModel: viewModel)
+
+        rootViewController?.pushViewController(viewController, animated: true)
+    }
+}
+
